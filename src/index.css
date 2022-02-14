@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#000000 ;
+}
+
+:root {
+  /* font... */
+  --primary-font:'Poppins',sans-serif;
+  --secondary-font:Quicksand;
+
+  /* color  */
+  --text-red:#FF0000;
+  --bg-color-black:#041014;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {          
+  width: 10px;              
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--text-red);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--text-red);
+}
+
+.navbar-toggler i{
+  color: white;
+  font-size: 16px;
+}
+.navbar-wrapper{
+  /* background-color: rgb(139, 137, 137); */
+  background-color:var(--bg-color-black);
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+  width: 100%;
+  /* position: fixed;
+  left: 0;
+  top: 0; */
+  z-index: 1000;
+}
+/* #navbarNav{
+  display: flex;
+  justify-content: none;
+} */
+.navbar-wrapper .menu-navbar{
+  width: 75%;
+  display: flex;
+  justify-content: center; 
+  /* height: auto;  */
+}
+.navbar-wrapper .navbar-brand {
+  color: var(--text-red);
+  font-family: var(--primary-font);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 50px;
+  transition: 0.3s linear;
+}
+.navbar-brand:hover{
+  color: white;
+}
+.nav-item{
+  margin: 0px 6px;
+}
+.navbar-wrapper .nav-item a{
+  color: var(--text-red);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar-wrapper .nav-item :hover{
+  color: white;
+}
+.btn{
+  color: var(--text-red);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid var(--text-red);
+}
+.navbar-wrapper input{
+  box-shadow: none;
+  width: 150px;
+  /* border-inline: none; */
+}
+.btn:hover{
+  color: white;
+  background-color:var(--text-red);
+}
+
+.news-wrapper{
+  padding-top: 85px;
+}
+/* ...main newscomponent.... */
+.headline-tittle{
+    font-family: var(--secondary-font);
+    color: var(--text-red);
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.card{
+    /* background-color:var(--bg-color-black); */
+    color: white;
+    /* border: 1px solid var(--text-red); */
+    transition: all 0.3s linear;
+}
+.card:hover{
+  transform: scale(1.2);
+  z-index: 999;
+}
+.card-img-top{
+    height: 200px;
+}
+
+.card h5{
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(216, 216, 216);
+  height: 50px;
+  overflow: hidden;
+  
+}
+.card-text{
+  font-family: var(--primary-font);
+  font-size: 14px;
+  color: rgb(143, 143, 143);
+  height: 80px;
+  overflow: hidden;
+}
+
+
+
+/* ... Responsiiveness/...  */
+
+@media screen and (max-width: 1024px){
+  /* #navbarNav{
+    display: block !important;
+
+  } */
+  .search-btn{
+    display: none !important;
+  }
+  .navbar-wrapper .menu-navbar{
+    width: 100%;
+  }
+}
