@@ -1,3 +1,15 @@
+# News App 
+
+A fully responsive news web app that fetch news from Api and showcase latest trending news category-wise.
+Technologies used: React Js, bootstrap, and news API.
+
+[Get a Desktop view](https://drive.google.com/file/d/12uC0Zi2y9whnDvftuDcck3d54by3Tyow/view?usp=sharing)
+
+[Get a Mobile view](https://drive.google.com/file/d/1-j6yuq8-OsVYjXr1Sn7cFhU35GJ229Bt/view?usp=sharing)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
