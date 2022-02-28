@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 function App() {
-  const API=process.env.REACT_APP_NEWS_API_KEY;
+  const API="e1aaf022ae094549a22d3e50ca8ddbb2";
   return <div>
       <Router>
       <Navbar/>
